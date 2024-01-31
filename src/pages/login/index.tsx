@@ -14,9 +14,10 @@ const LogIn = ({ navigateToChat, engine, updateEngine }: any) => {
 
   const onLogIn = () => {
     const { OPEN_AI_ORG, OPENAI_API_KEY } = state?.OPENAI_CREDENTIALS;
+    // const { Username, Password }  = state?.CREDENTIALS;
     const headers = { "Content-Type": "application/json" };
     const body = JSON.stringify({ OPEN_AI_ORG, OPENAI_API_KEY });
-    const requestData = {
+        const requestData = {
       method: "POST",
       headers,
       body,
@@ -84,7 +85,7 @@ const LogIn = ({ navigateToChat, engine, updateEngine }: any) => {
     <>
       <div className="wrapper fadeInDown">
         <div id="formContent">
-          <h2 className="active"> Sign In </h2>
+          <h2 className="active"> Log In </h2>
 
           <form>
             <input
@@ -110,13 +111,9 @@ const LogIn = ({ navigateToChat, engine, updateEngine }: any) => {
               onClick={!isLoginDisabled ? () => onUserLogin() : () => {}}
             />
           </form>
-          {state?.common?.isLoggedIn ? (
+          {state?.common?.isLoggedIn?.canContinue? (
             <>
-              <SelectEngine
-                list={state?.common?.engines}
-                engine={engine}
-                updateEngine={updateEngine}
-              />
+              <Link href={"profiles/page1"}>Profiles</Link>
             </>
           ) : (
             ""

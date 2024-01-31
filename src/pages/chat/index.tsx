@@ -18,11 +18,16 @@ const Chat = ({ model }: API_AUTH) => {
   const chatStyles = {
     chatBubble: {
       text: {
-        fontSize: 20,
+        fontSize: 12,
+        marginLeft: "10px", 
       },
       chatbubble: {
-        borderRadius: 35,
-        padding: 20,
+        borderRadius: 10,
+        padding:5,
+        margin: 5,
+        color: "#ffffff",
+        background: "#3498db",
+        width: 400,
       },
     },
   };
@@ -117,8 +122,8 @@ const Chat = ({ model }: API_AUTH) => {
           messages={state?.chat?.messages || []} // Array: list of message objects
           isTyping={state?.chat?.isTyping || false} // Boolean: is the recipient typing
           hasInputField={false} // Boolean: use our input, or use your own
-          showSenderName // show the name of the user who sent the message
-          bubblesCentered={false} //Boolean should the bubbles be centered in the feed?
+          showSenderName
+          bubblesCentered={true} //Boolean should the bubbles be centered in the feed?
           bubbleStyles={chatStyles.chatBubble} // JSON: Custom bubble styles
         />
       </div>
@@ -129,7 +134,7 @@ const Chat = ({ model }: API_AUTH) => {
             onChange={onType}
             value={state?.chat?.newMessage || ""}
             onKeyDown={handleKeyDown}
-            placeholder={"Ask something"}
+            placeholder={"Chat"}
           />
         </div>
         <div

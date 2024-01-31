@@ -1,13 +1,13 @@
 .msg_send {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 4rem;
     width: 100%;
     text-align: center;
 }
 
 .chat_feed{
-    margin: 10px;
+    margin: 15rem;
 }
 
 .bot_info {
@@ -16,4 +16,7 @@
     top: 0;
     width: 100%;
     text-align: center;
+}
+.msg-txt{
+    background-color: rgb(255, 0, 106);
 }
