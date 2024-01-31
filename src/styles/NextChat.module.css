@@ -20,3 +20,35 @@
 .msg-txt{
     background-color: rgb(255, 0, 106);
 }
+
+/* styles.css or NextChat.module.css */
+/* .goBackButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  } */
+
+.goBackButton{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #909094;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(28, 35, 38, 0.4);
+    box-shadow: 0 10px 30px 0 rgba(28, 35, 38, 0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px 20px 20px 20px;
+
+  }
+  

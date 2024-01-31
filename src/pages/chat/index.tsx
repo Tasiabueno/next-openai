@@ -3,6 +3,7 @@ import { ChatFeed, Message } from "react-chat-ui";
 import { GlobalStateContext } from "../../context/common-state";
 import NavigationService from "../../operations/common/navigation";
 import styles from "../../styles/NextChat.module.css";
+import Link from 'next/link';
 
 const ID_WISE_USER = ["Human", "AI"];
 
@@ -14,6 +15,11 @@ const Chat = ({ model }: API_AUTH) => {
       NavigationService.navigateToRoot();
     }
   });
+
+  const onGoBack = () => {
+    // Implement the logic to go back
+    console.log("Go Back clicked!");
+  };
 
   const chatStyles = {
     chatBubble: {
@@ -127,6 +133,8 @@ const Chat = ({ model }: API_AUTH) => {
           bubbleStyles={chatStyles.chatBubble} // JSON: Custom bubble styles
         />
       </div>
+      <Link href="./profiles/page1" className={styles.goBackButton}> Profiles
+      </Link>
       <div className={styles.msg_send}>
         <div className="msg-txt">
           <input
