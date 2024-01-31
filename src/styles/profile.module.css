@@ -1,0 +1,48 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.link{
+  color: rgb(255, 255, 255);
+  text-decoration: underline; 
+  cursor: pointer;
+  margin-left: 10px;
+
+}
+.centeredImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin based on your preference */
+  }
+
+  .roundedImage {
+    border-radius: 50%; /* Set border-radius to 50% for a circular shape, or adjust as needed */
+  }
+
+
+  .indentedTitle {
+    margin-bottom: 10px;
+  }
+  
+  .indentedText {
+    margin-bottom: 20px;
+  }
+  
+  .indentedLink {
+    margin-top: 40px;
+  }
+  
+  .centeredImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .roundedImage {
+    border-radius: 50%;
+  }
+  

@@ -3,6 +3,7 @@ import { GlobalStateProvider } from "../context/common-state";
 import "../styles/globals.css";
 import "../styles/login.css";
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>

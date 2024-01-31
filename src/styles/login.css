@@ -8,25 +8,35 @@ body {
 }
 
 a {
-  color: #92badd;
+  color: #000000;
   display: inline-block;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
+  text-decoration: underline; 
+
 }
+
 
 h2 {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  text-transform: uppercase;
   display: inline-block;
   margin: 40px 8px 10px 8px;
-  color: #cccccc;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 40px 8px 10px 8px;
+  color: #ffffff;
 }
 
 
-
-/* STRUCTURE */
+/*TRUCTURE */
 
 .wrapper {
   display: flex;
@@ -71,7 +81,7 @@ h2.inactive {
 
 h2.active {
   color: #0d0d0d;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid #909094;
 }
 
 
@@ -79,7 +89,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 input[type=button], input[type=submit], input[type=reset] {
-  background-color: #56baed;
+  background-color: #909094;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -88,8 +98,8 @@ input[type=button], input[type=submit], input[type=reset] {
   display: inline-block;
   text-transform: uppercase;
   font-size: 13px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
-  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  -webkit-box-shadow: 0 10px 30px 0 rgba(28, 35, 38, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(28, 35, 38, 0.4);
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
   margin: 5px 20px 40px 20px;
@@ -115,7 +125,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
 input[type=text] {
   background-color: #f6f6f6;
   border: none;
-  color: #0d0d0d;
+  color: #ffffff;
   padding: 15px 32px;
   /* text-align: center; */
   text-decoration: none;
@@ -135,7 +145,7 @@ input[type=text] {
 
 input[type=text]:focus {
   background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid #909094;
 }
 
 input[type=text]:placeholder {
@@ -261,7 +271,7 @@ input[type=text]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #56baed;
+  background-color: #909094;
   content: "";
   transition: width 0.2s;
 }

@@ -92,7 +92,7 @@ const LogIn = ({ navigateToChat, engine, updateEngine }: any) => {
               id="login"
               className="fadeIn second"
               name="login"
-              placeholder="Enter organization ID (OPTIONAL)"
+              placeholder="Username"
               onChange={onOrganizationIdChange}
             />
             <input
@@ -100,7 +100,7 @@ const LogIn = ({ navigateToChat, engine, updateEngine }: any) => {
               id="password"
               className="fadeIn third"
               name="key"
-              placeholder="Enter open AI API key"
+              placeholder="Password"
               onChange={openAIAPIKeyChange}
             />
             <input
@@ -121,7 +121,7 @@ const LogIn = ({ navigateToChat, engine, updateEngine }: any) => {
           ) : (
             ""
           )}
-          <Link href={"test-page/page1"}>Go to Posts</Link>
+          <Link href={"profiles/page1"}>Profiles</Link>
           <br />
           <br />
         </div>
